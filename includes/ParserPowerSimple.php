@@ -44,28 +44,28 @@ class ParserPowerSimple {
 			'ParserPower\\ParserPowerSimple::trimuescRender',
 			SFH_OBJECT_ARGS
 		);
-		$parser->setFunctionTagHook(
-			'linkpage',
-			'ParserPower\\ParserPowerSimple::linkpageRender',
-			0
-		);
-		$parser->setFunctionTagHook(
-			'linktext',
-			'ParserPower\\ParserPowerSimple::linktextRender',
-			0
-		);
-		$parser->setFunctionTagHook(
-			'esc',
-			'ParserPower\\ParserPowerSimple::escRender',
-			0
-		);
-		for ($i = 1; $i < 10; ++$i) {
-			$parser->setFunctionTagHook(
-				'esc' . $i,
-				'ParserPower\\ParserPowerSimple::escRender',
-				0
-			);
-		}
+		// $parser->setFunctionTagHook(
+		// 	'linkpage',
+		// 	'ParserPower\\ParserPowerSimple::linkpageRender',
+		// 	0
+		// );
+		// $parser->setFunctionTagHook(
+		// 	'linktext',
+		// 	'ParserPower\\ParserPowerSimple::linktextRender',
+		// 	0
+		// );
+		// $parser->setFunctionTagHook(
+		// 	'esc',
+		// 	'ParserPower\\ParserPowerSimple::escRender',
+		// 	0
+		// );
+		// for ($i = 1; $i < 10; ++$i) {
+		// 	$parser->setFunctionTagHook(
+		// 		'esc' . $i,
+		// 		'ParserPower\\ParserPowerSimple::escRender',
+		// 		0
+		// 	);
+		// }
 		$parser->setFunctionHook(
 			'ueif',
 			'ParserPower\\ParserPowerSimple::ueifRender',
